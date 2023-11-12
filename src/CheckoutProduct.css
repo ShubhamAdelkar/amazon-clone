@@ -11,6 +11,7 @@
     min-width: 100px;
     background-color: white;
     flex-wrap: wrap;
+    border-radius: 3px;
     transition: all 0.3s ease-in-out;
 }
 
