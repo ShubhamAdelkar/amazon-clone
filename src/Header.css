@@ -26,18 +26,22 @@
     height: 12px;
     padding: 10px;
     border: none;
+    border-radius: 3px;
     width: 100%;
+    outline: 2px solid #FEBD69;
 }
 
 .header__searchIcon {
     padding: 5px;
     height: 22px !important;
-    background-color: #cd9042;
+    transform: translateX(-3px);
+    background-color: #FEBD69;
+    border: 2px solid #FEBD69;
+    border-radius: 3px;
 }
 
 .header__optionLineOne {
     font-size: 12px;
-
 }
 
 .header__optionLineTwo {
