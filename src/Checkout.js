@@ -9,11 +9,7 @@ function Checkout() {
         <img
           className="checkout__ad"
           src="https://storage.googleapis.com/website-production/uploads/2023/01/new-yorker-banner-ad-.png"
-          alt=""
-          onError={() => {
-            // Handle image load error
-            console.log("Image failed to load");
-          }}
+          alt="add"
         />
 
         <div>

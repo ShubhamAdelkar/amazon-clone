@@ -1,15 +1,20 @@
 .checkout {
     margin-left: auto;
     margin-right: auto;
-    max-width: 1200px;
+    max-width: 1160px;
     display: flex;
     padding: 20px;
     background-color: white;
-    height: max-content;
+    height: 1000px;
+}
+
+.checkout__left {
+    width: 840px;
 }
 
 .checkout__ad {
     width: 100%;
+    z-index: 1000;
     margin-bottom: 10px;
 }
 
