@@ -10,6 +10,7 @@
     max-height: 600px;
     min-width: 100px;
     background-color: white;
+    border-radius: 3px;
     flex-wrap: wrap;
     transition: all 0.3s ease-in-out;
 }
