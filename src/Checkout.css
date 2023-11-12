@@ -8,19 +8,23 @@
     min-height: 1000px;
 }
 
+
 .checkout__left {
     width: 840px;
 }
 
 .checkout__ad {
     width: 100%;
-    z-index: 1000;
+    z-index: 1;
     margin-bottom: 10px;
 }
 
 .checkout__title {
-    margin-left: 10px;
     margin-right: 10px;
     padding: 10px;
     border-bottom: 1px solid lightgrey;
+}
+
+.checkout__title>h2 {
+    margin: 0px;
 }
