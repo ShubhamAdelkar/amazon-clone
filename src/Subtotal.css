@@ -27,9 +27,10 @@ button {
 
 .subtotal__gift {
     display: flex;
+    gap: 0.5rem;
     align-items: center;
 }
 
 .subtotal__gift>input {
-    margin-left: 2px;
+    margin-left: px;
 }
