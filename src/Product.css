@@ -12,10 +12,6 @@
     background-color: white;
     flex-wrap: wrap;
     transition: all 0.3s ease-in-out;
-
-    &:hover {
-        scale: 1.001;
-    }
 }
 
 .product__rating {
@@ -45,6 +41,10 @@
     object-fit: contain;
     margin-top: 10px;
     margin-bottom: 15px;
+
+    &:hover {
+        scale: 1.004;
+    }
 }
 
 .product>button {
@@ -57,6 +57,11 @@
     margin-bottom: 6px;
     color: black;
     border-color: #a88734 #9c7e31 #846a29;
+
+    &:hover {
+        background: #e1b33f;
+        scale: 1.007;
+    }
 }
 
 .product__price {

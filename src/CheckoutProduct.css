@@ -6,16 +6,12 @@
     margin: 10px;
     z-index: 1;
     padding: 16px;
-    /* width: 100%; */
     border: 1px solid gainsboro;
     max-height: 600px;
     min-width: 100px;
     background-color: white;
     flex-wrap: wrap;
     transition: all 0.3s ease-in-out;
-    /* &:hover {
-    scale: 1.001;
-} */
 }
 
 .checkoutProduct__rating {
@@ -57,6 +53,11 @@
     margin-bottom: 6px;
     color: black;
     border-color: #a88734 #9c7e31 #846a29;
+    transition: all 0.3s ease-in-out;
+
+    &:hover {
+        color: #846a29;
+    }
 }
 
 .checkoutProduct__price {
@@ -65,7 +66,6 @@
 }
 
 .checkoutProduct__price__info {
-    /* height: 100px; */
     flex: 1;
 }
 

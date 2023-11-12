@@ -6,6 +6,11 @@ button {
     margin-top: 10px;
     color: black;
     border-color: #a88734 #9c7e31 #846a29;
+    transition: all 0.3s ease-in-out;
+
+    &:hover {
+        background: #e1b33f;
+    }
 }
 
 .subtotal {
