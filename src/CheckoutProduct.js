@@ -2,7 +2,6 @@ import React from 'react'
 import './CheckoutProduct.css';
 import StarIcon from '@mui/icons-material/Star';
 
-
 const CheckoutProduct = ({ id, title, seller, image, price, list, rating, save }) => {
     return (
         <div className='checkoutProduct'>
