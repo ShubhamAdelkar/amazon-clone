@@ -42,12 +42,13 @@
 
 .header__optionLineOne {
     font-size: 12px;
+    text-decoration: none;
 }
 
 .header__optionLineTwo {
     font-size: 13px;
     font-weight: 800;
-
+    text-decoration: none;
 }
 
 .header__optionBasket {
