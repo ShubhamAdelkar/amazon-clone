@@ -25,7 +25,7 @@ function Product({ id, title, seller, image, price, list, rating, save }) {
     return (
         <div className='product'>
             <div className='product__info'>
-                <p>{title}</p>
+                <p className='title'>{title}</p>
                 <p className='seller'>{seller}</p>
                 <p className='product__price'>
                     <small>$ </small>
