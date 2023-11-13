@@ -1,3 +1,15 @@
-body {
-    background: #fff;
+.login {
+    display: flex;
+    height: 100vh;
+    flex-direction: column;
+    background-color: #fff;
+}
+
+.login__logo {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    width: 100px;
+    object-fit: contain;
+    margin-right: auto;
+    margin-left: auto;
 }

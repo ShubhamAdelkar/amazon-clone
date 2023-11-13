@@ -2,6 +2,7 @@ import './App.css';
 import Header from './Header';
 import Footer from './Footer';
 import Home from './Home';
+import Login from './Login';
 import Checkout from './Checkout';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 
@@ -13,7 +14,7 @@ function App() {
 
         <Routes>
           <Route path='/login' element={<>
-            <h1>LogIn Page</h1>
+            <Login />
           </>} />
 
           <Route path='/checkout' element={<>
