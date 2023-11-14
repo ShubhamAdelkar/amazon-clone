@@ -1,3 +1,5 @@
+/* Login.css */
+
 .login {
     display: flex;
     height: 100vh;
@@ -7,12 +9,9 @@
 }
 
 .login__logo {
-    margin-top: 30px;
-    margin-bottom: 30px;
+    margin: 30px auto;
     width: 100px;
     object-fit: contain;
-    margin-right: auto;
-    margin-left: auto;
 }
 
 .login__container {
@@ -20,33 +19,40 @@
     font-weight: 400;
     flex-direction: column;
     align-items: center;
-    gap: 1.5rem;
+    justify-content: center;
+    gap: 1.0rem;
     padding: 26px;
+    width: 100%;
     max-width: 290px;
     border-radius: 10px;
     border: 1px solid lightgrey;
 }
 
+form {
+    width: 100%;
+}
+
 form>input {
-    margin-bottom: 6px;
-    width: 300px;
+    width: 100%;
     height: 26px;
+    margin-bottom: 6px;
     outline: none;
     border-radius: 4px;
     border: 1px solid rgb(166, 166, 166);
+    box-sizing: border-box;
+    /* Ensure input box-sizing includes padding and border */
 
     &:focus {
-        background-color: #F7FEFF;
+        background-color: #f7feff;
         border-color: #007185;
-        box-shadow: 0 0 0 3px #c8f3fa, 0 1px 2px rgba(15, 17, 17, .15) inset;
+        box-shadow: 0 0 0 3px #c8f3fa, 0 1px 2px rgba(15, 17, 17, 0.15) inset;
     }
 }
 
-
 form>h2 {
-    transform: translateX(-110px);
     font-size: 28px;
     font-weight: 500;
+    margin-bottom: 10px;
 }
 
 form>h5 {
@@ -59,10 +65,47 @@ form>h5 {
     font-size: 12px;
 }
 
+form>.submit,
+.create__account {
+    width: 100%;
+    height: 30px;
+    margin-top: 10px;
+}
+
 form>.submit {
     width: 100%;
     height: 30px;
-    background: #f0c14b;
-    border-color: #a88734 #9c7e31 #846a29;
+    margin-top: 10px;
+    background: #FFD814;
+    border: none;
     color: #111;
+
+    &:hover {
+        background: #e4c008;
+    }
+
+    &:focus {
+        background: #FFD814;
+        border-color: #007185;
+        box-shadow: 0 0 0 3px #c8f3fa, 0 1px 2px rgba(15, 17, 17, 0.15) inset;
+    }
+
+}
+
+.create__account {
+    width: 100%;
+    height: 30px;
+    margin-top: 5px;
+    background: #d3d3d3;
+    color: #333;
+    border: 1px solid #d3d3d3;
+
+    &:hover {
+        background: #bdbdbd;
+    }
+
+    &:focus {
+        border-color: #007185;
+        box-shadow: 0 0 0 3px #c8f3fa, 0 1px 2px rgba(15, 17, 17, 0.15) inset;
+    }
 }
