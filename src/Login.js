@@ -26,6 +26,7 @@ const Login = () => {
                     By continuing, you agree to Amazon's Conditions of Use and Privacy Notice.
                 </p>
                 <button className='create__account'>Create Account</button>
+                <p className='me'>by imbachhu</p>
             </div>
         </div>
     )
