@@ -50,18 +50,20 @@
 }
 
 .product>button {
-    background: #f0c14b;
     border: 1px solid;
     cursor: pointer;
     padding: 3px 6px;
     border-radius: 2px;
     margin-top: 10px;
     margin-bottom: 6px;
-    color: black;
+    margin-top: 10px;
+    background: #FFD814;
+    border: none;
+    color: #111;
     border-color: #a88734 #9c7e31 #846a29;
 
     &:hover {
-        background: #e1b33f;
+        background: #f2cd13;
         scale: 1.007;
     }
 }

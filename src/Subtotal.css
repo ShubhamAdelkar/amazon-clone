@@ -1,7 +1,8 @@
 button {
-    background: #f0c14b;
-    border: 1px solid;
-    padding: 3px 6px;
+    background: #FFD814;
+    border: none;
+    color: #111;
+    padding: 6px 6px;
     border-radius: 2px;
     margin-top: 10px;
     color: black;
@@ -9,7 +10,7 @@ button {
     transition: all 0.3s ease-in-out;
 
     &:hover {
-        background: #e1b33f;
+        background: #ebc711;
     }
 }
 
