@@ -5,6 +5,7 @@
     z-index: 100;
     position: sticky;
     align-items: center;
+    justify-content: space-between;
     background-color: #131921;
 }
 
@@ -16,8 +17,8 @@
 }
 
 .header__search {
-    flex: 1;
     display: flex;
+    flex: 1;
     align-items: center;
     border-radius: 24px;
 }
