@@ -10,7 +10,7 @@ import { useEffect } from 'react';
 import { useStateValue } from './StateProvider';
 
 function App() {
-  const [{ }, dispatch] = useStateValue();
+  const [{ }, dispatch] = useStateValue(); // eslint-disable-next-line
   useEffect(() => {
     auth.onAuthStateChanged(authUser => {
       console.log('THE USER IS >>>', authUser);
