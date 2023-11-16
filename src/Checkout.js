@@ -1,6 +1,6 @@
 import React from 'react'
 import './Checkout.css'
-import image from './banner.png';
+import image from './banner2.jpg';
 import Subtotal from './Subtotal';
 import CheckoutProduct from './CheckoutProduct';
 import { useStateValue } from './StateProvider';
@@ -10,11 +10,12 @@ function Checkout() {
   return (
     <div className='checkout'>
       <div className='checkout__left' >
-        <img
+        <a href='https://www.primevideo.com/detail/Hunters/0M8DF75985NBNID4SCTP3X0AZJ' target='_blanck'><img
           className="checkout__ad"
           src={image}
-          alt="add"
+          alt="ad"
         />
+        </a>
 
         <div>
           <h2 className='checkout__title'>
