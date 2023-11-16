@@ -19,6 +19,10 @@
     margin-bottom: 10px;
 }
 
+h3 {
+    padding-left: 10px;
+}
+
 .checkout__title {
     padding: 10px;
     border-bottom: 1px solid lightgrey;
