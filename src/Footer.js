@@ -6,7 +6,6 @@ function Footer() {
         <div className='footer'>
 
             <div className='footer__links'>
-                <h1>Footer is in construction</h1>
             </div>
 
             <div className='footer__credits'>
