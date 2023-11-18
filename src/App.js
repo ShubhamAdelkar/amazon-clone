@@ -45,6 +45,12 @@ function App() {
             <Footer />
           </>} />
 
+          <Route path='/payment' element={<>
+            <Header />
+            <h1>This is payment page</h1>
+            <Footer />
+          </>} />
+
           <Route path='/' element={<>
             <Header />
             <Home />
