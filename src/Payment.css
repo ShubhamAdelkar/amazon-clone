@@ -1,5 +1,6 @@
 .payment {
     background-color: white;
+    min-height: 900px;
 }
 
 h3 {
@@ -33,4 +34,8 @@ h3 {
     padding: 10px;
     margin: 0 20px;
     border-bottom: 1px solid lightgray;
+}
+
+.payment__items {
+    max-width: 600px;
 }
