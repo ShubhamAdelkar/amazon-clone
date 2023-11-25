@@ -9,6 +9,10 @@ import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import { auth } from './firebase';
 import { useEffect } from 'react';
 import { useStateValue } from './StateProvider';
+import { loadStripe } from '@stripe/stripe-js';
+import { Elements } from '@stripe/react-stripe-js';
+
+const promise = loadStripe('pk_live_51JwnC5SFI3S1gLTCwWKRHSgVykGj6kJ7gTF7ZQmu9oUbbphRUkbd6qOBJ7NwREfd9bwl5NjRyJHETUIKCHlL3aVg00qCOmb5Li');
 
 function App() {
   const [{ }, dispatch] = useStateValue(); // eslint-disable-next-line
@@ -48,7 +52,9 @@ function App() {
 
           <Route path='/payment' element={<>
             <Header />
-            < Payment />
+            <Elements stripe={promise}>
+              < Payment />
+            </Elements>
             <Footer />
           </>} />
 
