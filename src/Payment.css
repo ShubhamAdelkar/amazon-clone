@@ -39,3 +39,9 @@ h3 {
 .payment__items {
     max-width: 600px;
 }
+
+.payment__address,
+.payment__items,
+.payment__details {
+    flex: 0.8;
+}
