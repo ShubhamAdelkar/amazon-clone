@@ -1,8 +1,8 @@
-import React from 'react'
 import './Login.css'
-import { Link, useNavigate } from 'react-router-dom';
+import React from 'react'
 import { auth } from './firebase';
 import { useState } from 'react';
+import { Link, useNavigate } from 'react-router-dom';
 
 const Login = () => {
     const navigate = useNavigate();

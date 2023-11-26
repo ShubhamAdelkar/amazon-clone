@@ -1,16 +1,16 @@
 import './App.css';
-import Header from './Header';
-import Footer from './Footer';
-import Home from './Home';
 import Login from './Login';
-import Payment from './Payment';
-import Checkout from './Checkout';
-import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+import Home from './Home';
+import Footer from './Footer';
+import Header from './Header';
 import { auth } from './firebase';
 import { useEffect } from 'react';
-import { useStateValue } from './StateProvider';
+import Payment from './Payment';
+import Checkout from './Checkout';
 import { loadStripe } from '@stripe/stripe-js';
+import { useStateValue } from './StateProvider';
 import { Elements } from '@stripe/react-stripe-js';
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 
 const promise = loadStripe('pk_live_51JwnC5SFI3S1gLTCwWKRHSgVykGj6kJ7gTF7ZQmu9oUbbphRUkbd6qOBJ7NwREfd9bwl5NjRyJHETUIKCHlL3aVg00qCOmb5Li');
 
