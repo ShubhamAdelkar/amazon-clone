@@ -8,10 +8,14 @@ import { CardElement } from '@stripe/react-stripe-js';
 import { useState } from 'react';
 import CurrencyFormat from 'react-currency-format';
 import { getBasketTotal } from './reducer';
+import axios from 'axios';
+import { useEffect } from 'react';
+import { useNavigate } from 'react-router-dom';
 
 function Payment() {
     const [{ basket, user }, dispatch] = useStateValue();
 
+    const navigate = useNavigate();
     const stripe = useStripe();
     const elements = useElements();
 
@@ -20,9 +24,35 @@ function Payment() {
 
     const [error, setError] = useState(null);
     const [disabled, setDisabled] = useState(null);
+    const [clientSecret, setClientSecret] = useState(true);
 
-    const handleSubmit = e => {
+    useEffect(() => {
+        const getClientSecrect = async () => {
+            const response = await axios({
+                method: 'post',
+                url: `/payment/create?total=${getBasketTotal(basket) * 100}`
+            });
+            setClientSecret(response.data.clientSecret)
+        }
 
+        getClientSecrect();
+    }, [basket])
+
+    const handleSubmit = async (e) => {
+        e.preventDefault();
+        setProcessing(true);
+
+        const payload = await stripe.confirmCardPayment(clientSecret, {
+            payment_method: {
+                card: elements.getElement(CardElement)
+            }
+        }).then(({ paymentIntent }) => {
+            setSucceeded(true)
+            setError(null)
+            setProcessing(false)
+
+            navigate('/orders');
+        })
     }
 
     const handleChange = e => {
@@ -86,6 +116,7 @@ function Payment() {
                                 />
                                 <button disabled={processing || disabled || succeeded}> <span>{processing ? <p>Processing</p> : "Buy Now"}</span></button>
                             </div>
+                            {error && <div>{error}</div>}
                         </form>
                     </div>
                 </div>
