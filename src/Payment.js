@@ -57,10 +57,10 @@ function Payment() {
         })
     }
 
-    const handleChange = e => {
+    const handleChange = (e) => {
         setDisabled(e.empty);
-        setError(e, error ? e.error.message : "");
-    }
+        setError(e.error ? e.error.message : "");
+    };
 
 
     return (
